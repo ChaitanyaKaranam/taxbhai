@@ -12,6 +12,27 @@
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
 }
 
+// Button Properties
+@mixin btn-props($color, $theme) {
+  background-color: $color;
+  @if $theme == 'dark' {
+    color: black;
+  } @else {
+    color: white;
+  }
+  &:hover:not(.loading) {
+    @if $theme == 'dark' {
+      background-color: darken($color: $color, $amount: 5%);
+    } @else {
+      background-color: lighten($color: $color, $amount: 10%);
+    }
+  }
+  &:active:not(.disabled),
+  &:active:not(.loading) {
+    transform: translate(0, 2px);
+  }
+}
+
 //------------------------------------------
 //                 Font                    |
 //------------------------------------------

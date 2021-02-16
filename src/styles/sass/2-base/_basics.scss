@@ -14,3 +14,28 @@ main {
   max-width: 1500px;
   padding: 5rem 2rem;
 }
+
+input {
+  font-family: inherit;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid $lt-grey-1;
+  border-radius: 5px;
+  width: 15rem;
+  font-size: 1rem;
+}
+
+button {
+  padding: 0.5rem;
+  min-width: 12rem;
+  height: 2.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  @include shadow;
+  @include btn-props($black, 'light');
+}
+
+hr {
+  border: 1px solid $lt-grey-2;
+  margin-bottom: 2rem;
+}

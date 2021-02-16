@@ -1,0 +1,25 @@
+.itc-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  .itc-layout-calculator {
+    padding-right: 2rem;
+    display: grid;
+    row-gap: 3rem;
+    border-right: 1px solid $lt-grey-1;
+    article {
+      display: grid;
+      row-gap: 2rem;
+    }
+  }
+  .itc-layout-chart {
+    position: sticky;
+    top: 5%;
+    align-self: start;
+    padding-left: 2rem;
+    .itc-layout-chart-details {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      row-gap: 2rem;
+    }
+  }
+}

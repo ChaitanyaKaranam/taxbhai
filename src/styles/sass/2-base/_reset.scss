@@ -1,15 +1,17 @@
-body{
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
+body {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
 }
 
-*, *:before, *:after {
-    box-sizing: inherit;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
-button{
-    border: none;
+button {
+  border: none;
 }
 
 h1,
@@ -17,18 +19,14 @@ h2,
 h3,
 h4,
 h5,
-h6{
+h6 {
+  margin: 0px;
+}
+
+nav {
+  ul {
+    list-style: none;
     margin: 0px;
-}
-
-nav{
-    ul{
-        list-style: none;
-        margin: 0px;
-        padding: 0px;
-    }
-}
-
-input[type="text"]{
-    border: none;
+    padding: 0px;
+  }
 }

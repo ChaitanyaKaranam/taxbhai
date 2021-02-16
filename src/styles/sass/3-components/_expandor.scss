@@ -1,0 +1,28 @@
+.expandor {
+  @include shadow;
+  background-color: $lt-grey-3;
+  border-radius: 0.5rem;
+  .section-header {
+    @include container;
+    cursor: pointer;
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .section-content {
+    display: none;
+  }
+  &.expanded {
+    .section-header {
+      border-bottom: 1px solid $lt-grey-2;
+      img {
+        transform: rotate(180deg);
+      }
+    }
+    .section-content {
+      display: grid;
+      @include container;
+    }
+  }
+}

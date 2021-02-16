@@ -1,0 +1,20 @@
+{
+    "title": "Investment Details",
+    "fields": [
+        {
+            "type": "number",
+            "name": "Investments in 80C/80CCC",
+            "id": "inv_c"
+        },
+        {
+            "type": "number",
+            "name": "Investments in 80CCD (1B)",
+            "id": "inv_ccd"
+        },
+        {
+            "type": "number",
+            "name": "Medical Insurance 80D",
+            "id": "inv_mi"
+        }        
+    ]
+}

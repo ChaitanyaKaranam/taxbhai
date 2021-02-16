@@ -1,0 +1,20 @@
+{
+    "title": "Income Details",
+    "fields": [
+        {
+            "type": "number",
+            "name": "What is your Gross Annual Income (Including all allowances) ?",
+            "id": "id_gai"
+        },
+        {
+            "type": "number",
+            "name": "H.R.A Exemption received",
+            "id": "id_hra"
+        },
+        {
+            "type": "number",
+            "name": "Any other Exemptions received",
+            "id": "id_other"
+        }
+    ]
+}

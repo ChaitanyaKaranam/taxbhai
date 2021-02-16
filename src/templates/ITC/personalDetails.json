@@ -1,0 +1,14 @@
+{
+    "title": "Personal Details",
+    "fields": [
+        {
+            "type": "number",
+            "name": "What is your Age ?",
+            "id": "pd_age",
+            "additionalProps": {
+                "min": 18,
+                "max": 100
+            }
+        }
+    ]
+}
