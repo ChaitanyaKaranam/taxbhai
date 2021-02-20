@@ -33,7 +33,6 @@
 @media (max-width: 800px) {
   .itc-layout {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr auto;
     row-gap: 3rem;
     .itc-layout-calculator {
       border: 0rem;
@@ -41,6 +40,9 @@
     }
     .itc-layout-chart {
       padding-left: 0rem;
+      .itc-layout-chart-details {
+        text-align: center;
+      }
     }
   }
 }
