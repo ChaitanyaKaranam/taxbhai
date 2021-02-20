@@ -14,25 +14,11 @@ function Form({ template, onSubmit }) {
 
         switch (type) {
           case FORMFIELDS.TEXT:
-            return (
-              <TextInput
-                id={id}
-                name={name}
-                register={register}
-                additionalProps={additionalProps}
-              />
-            );
+            return <TextInput key={id} id={id} name={name} register={register} additionalProps={additionalProps} />;
           case FORMFIELDS.NUMBER:
-            return (
-              <NumberInput
-                id={id}
-                name={name}
-                register={register}
-                additionalProps={additionalProps}
-              />
-            );
+            return <NumberInput key={id} id={id} name={name} register={register} additionalProps={additionalProps} />;
           default:
-            return <div>Invalid Element</div>;
+            return <div key="Invalid Element">Invalid Element</div>;
         }
       });
     }

@@ -32,6 +32,8 @@ function IncomeTaxCalculator() {
 }
 
 function Calculator({ onSave }) {
+  const [sectionsExpanded, setSectionsExpanded] = useState({});
+
   const ITC_CATEGORIES = [
     {
       template: personalDetailsTemplate,
@@ -55,21 +57,24 @@ function Calculator({ onSave }) {
           const { title } = template;
           return (
             <Expandor
-              isSectionExpanded
+              key={title}
+              isSectionExpanded={sectionsExpanded[index + 1] !== undefined ? sectionsExpanded[index + 1] : true}
               heading={`${index + 1}. ${title}`}
               index={index + 1}
             >
               <Form
                 template={template}
-                onSubmit={(values) => onSave({ id, values })}
+                onSubmit={(values) => {
+                  onSave({ id, values });
+                  const newSectionsExpanded = { ...sectionsExpanded };
+                  newSectionsExpanded[index + 1] = false;
+                  setSectionsExpanded(newSectionsExpanded);
+                }}
               />
             </Expandor>
           );
         })}
       </article>
-      <div>
-        <button type="button">Calculate Tax</button>
-      </div>
     </div>
   );
 }
@@ -79,12 +84,7 @@ function TaxChart({ itdetails }) {
 
   function renderTaxDetails() {
     if (inv && fd) {
-      const {
-        taxableIncome,
-        deductions,
-        investments,
-        incomeTax,
-      } = getTaxDetails(itdetails);
+      const { taxableIncome, deductions, investments, incomeTax } = getTaxDetails(itdetails);
       return (
         <div className="itc-layout-chart-details">
           <div>

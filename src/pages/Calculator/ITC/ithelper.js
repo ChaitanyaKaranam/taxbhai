@@ -154,7 +154,7 @@ function getTaxDetails(itdetails) {
   return {
     investments,
     deductions,
-    taxableIncome,
+    taxableIncome: taxableIncome >= 0 ? taxableIncome : 0,
     incomeTax,
   };
 }

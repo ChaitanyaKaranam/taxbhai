@@ -4,17 +4,29 @@
         {
             "type": "number",
             "name": "What is your Gross Annual Income (Including all allowances) ?",
-            "id": "id_gai"
+            "id": "id_gai",
+            "additionalProps": {
+                "required": true,
+                "min": 0
+            }
         },
         {
             "type": "number",
             "name": "H.R.A Exemption received",
-            "id": "id_hra"
+            "id": "id_hra",
+            "additionalProps": {
+                "required": true,
+                "min": 0
+            }
         },
         {
             "type": "number",
             "name": "Any other Exemptions received",
-            "id": "id_other"
+            "id": "id_other",
+            "additionalProps": {
+                "required": true,
+                "min": 0
+            }
         }
     ]
 }

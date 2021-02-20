@@ -4,17 +4,29 @@
         {
             "type": "number",
             "name": "Investments in 80C/80CCC",
-            "id": "inv_c"
+            "id": "inv_c",
+            "additionalProps": {
+                "required": true,
+                "min": 0
+            }
         },
         {
             "type": "number",
             "name": "Investments in 80CCD (1B)",
-            "id": "inv_ccd"
+            "id": "inv_ccd",
+            "additionalProps": {
+                "required": true,
+                "min": 0
+            }
         },
         {
             "type": "number",
             "name": "Medical Insurance 80D",
-            "id": "inv_mi"
+            "id": "inv_mi",
+            "additionalProps": {
+                "required": true,
+                "min": 0
+            }
         }        
     ]
 }
