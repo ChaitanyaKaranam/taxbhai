@@ -31,5 +31,9 @@
     "eslint-watch": "^7.0.0",
     "prettier": "^2.0.5",
     "snowpack": "^3.0.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ChaitanyaKaranam/taxbhai.git"
+},
 }
